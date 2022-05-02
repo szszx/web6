@@ -1,0 +1,84 @@
+@import url(fonts.css);
+@import url(reset.css);
+
+#skip{
+  width: 100%;position: fixed;top: 0;left: 0;z-index: 2;}
+#skip li{width: 100%;}
+#skip li a{display: block;width: 100%;background: #000;font-size: 0;color: #fff;line-height: 0;text-align: center;}
+#skip li a:focus {font-size: 20px;line-height: 50px;}
+
+#wrap {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+#wrap #header {
+  width: 100%;
+  height: 69px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background: #000;
+}
+#wrap #main {width: 100%;position: relative; z-index: 2;}
+
+
+#wrap #main #section1 {width: 100%;}
+#wrap #main #section1 .container {width: 100%;}
+#wrap #main #section1 .container .wrap {width: 100%;}
+#wrap #main #section1 .container .wrap .slide-container {width: 100%;}
+#wrap #main #section1 .container .wrap .slide-container .slide-view {
+  width: 100%;
+  overflow: hidden;
+}
+#wrap #main #section1 .container .wrap .slide-container .slide-view .slide-wrap {
+  width: 700%;
+  display: flex;
+  margin-left: -100%;
+  position: relative;
+}
+#wrap #main #section1 .container .wrap .slide-container .slide-view .slide-wrap .slide {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/mainslide3_1.webp) no-repeat 50% 50% ;
+  background-size: cover;
+}
+#wrap #main #section1 .container .wrap .slide-container .slide-view .slide-wrap .slide1 {background-image: url(../img/mainslide3_1.webp);}
+#wrap #main #section1 .container .wrap .slide-container .slide-view .slide-wrap .slide2 {background-image: url(../img/mainslide3_2.jpg);}
+#wrap #main #section1 .container .wrap .slide-container .slide-view .slide-wrap .slide3 {background-image: url(../img/mainslide3_3.jpg);}
+#wrap #main #section1 .container .wrap .slide-container .slide-view .slide-wrap .slide4 {background-image: url(../img/mainslide3_4.jpg);}
+#wrap #main #section1 .container .wrap .slide-container .slide-view .slide-wrap .slide5 {background-image: url(../img/mainslide3_5.jpg);}
+
+#wrap #main #section1 .container .wrap .slide-container .slide-view .slide-wrap {
+  animation: mainslide3 20s infinite both;
+}
+
+@keyframes mainslide3 {
+    5% {left: calc(-100%*0);}
+   10% {left: calc(-100%*0);}
+   15% {left: calc(-100%*0);}
+   20% {left: calc(-100%*1);}
+   25% {left: calc(-100%*1);}
+   30% {left: calc(-100%*1);}
+   35% {left: calc(-100%*1);}
+   40% {left: calc(-100%*2);}
+   45% {left: calc(-100%*2);}
+   50% {left: calc(-100%*2);}
+   55% {left: calc(-100%*2);}
+   60% {left: calc(-100%*3);}
+   65% {left: calc(-100%*3);}
+   70% {left: calc(-100%*3);}
+   75% {left: calc(-100%*3);}
+   80% {left: calc(-100%*4);}
+   85% {left: calc(-100%*4);}
+   90% {left: calc(-100%*4);}
+   95% {left: calc(-100%*4);}
+  100% {left: calc(-100%*5);}
+
+}
+
+
+
+#wrap #footer {width: 100%;position: relative;z-index: 1;}

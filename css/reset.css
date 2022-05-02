@@ -1,0 +1,39 @@
+* {
+  margin:0;
+  padding:0;
+  vertical-align:middle;
+  box-sizing:border-box; /* 패딩, 테두리가 포함된 높이나 너비 */
+}
+html {
+  font-size:15px;
+}
+html, body {
+  width:100%;
+  height:100%;
+}
+body {
+  font:normal 100%/1 'Montserrat', 'Noto Sans KR', 'Open Sans'; 
+  color:#444;
+  background:#fff;
+}
+
+ul, li {
+  list-style:none;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-size:100%;
+  font-weight:normal;
+}
+a {
+  text-decoration:none;
+  color:#444;
+}
+strong, b {
+  font-weight:normal;
+}
+i, em, address {
+  font-style:normal;
+}
+strong, b, i, em, address, a, span {
+  vertical-align:baseline;
+}
